@@ -1,23 +1,29 @@
+html {
+    height: 100%;
+    background-image: url('../img/background-002.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 body {
     margin: 0;
-    background-color: lightgreen;
 }
 
 #kc-login-wrapper {
-    background-color: pink;
+
 }
 
 #kc-form-box-wrapper {
-    background-color: grey;
-    width: 500px;
+    background-color: rgba(33,33,33 ,0.6);
+    width: 300px;
     margin: auto;
     padding: 20px;
 }
 
 #kc-header {
-    background-color: black;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 160px;
+    margin-bottom: 150px;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -28,4 +34,34 @@ body {
 #kc-page-title {
     margin-top: 10px;
     text-align: center;
+    color: #EEEEEE;
+}
+
+.input-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'roboto', 'sans-serif';
+}
+
+input[type=text], input[type=password] {
+    width: 250px;
+    padding: 14px 10px;
+    margin: auto;
+    border: 1px solid #757575;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'roboto', 'sans-serif';
+}
+
+input[type=submit] {
+    width: 250px;
+    padding: 13px 10px;
+    margin: auto;
+    background-color: #003D6B;
+    border: 1px solid #1A237E;
+    color: #FAFAFA;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'roboto', 'sans-serif';
 }
