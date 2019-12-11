@@ -16,7 +16,7 @@ body {
 
 #kc-form-box-wrapper {
     background-color: rgba(33,33,33 ,0.6);
-    width: 300px;
+    max-width: 400px;
     margin: auto;
     padding: 20px;
 }
@@ -39,8 +39,8 @@ body {
 
 .input-wrapper {
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
     font-family: 'roboto', 'sans-serif';
 }
 
@@ -54,6 +54,15 @@ input[type=text], input[type=password] {
     font-family: 'roboto', 'sans-serif';
 }
 
+.checkbox {
+    width: 250px;
+    margin: auto;
+    margin-top: 45px;
+    box-sizing: border-box;
+    font-family: 'roboto', 'sans-serif';
+    color: white;
+}
+
 input[type=submit] {
     width: 250px;
     padding: 13px 10px;
@@ -61,7 +70,18 @@ input[type=submit] {
     background-color: #003D6B;
     border: 1px solid #1A237E;
     color: #FAFAFA;
+    cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
     font-family: 'roboto', 'sans-serif';
+}
+
+@media only screen and (max-width: 600px) {
+    #kc-form-box-wrapper {
+        max-width: 75%;
+    }
+
+    input[type=text], input[type=password], input[type=submit], .checkbox {
+        width: 90%;
+    }
 }
