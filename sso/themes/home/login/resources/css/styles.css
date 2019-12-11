@@ -77,6 +77,12 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 600px) {
+
+    #kc-header {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
     #kc-form-box-wrapper {
         max-width: 75%;
     }
